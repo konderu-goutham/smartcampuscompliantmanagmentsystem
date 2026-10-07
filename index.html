@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Campus Complaint Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <h1>Smart Campus</h1>
+      <p>Complaint Management System</p>
+    </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#complaint">Submit Complaint</a>
+      <a href="#track">Track Complaint</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div>
+        <span class="badge">ANURAG UNIVERSITY</span>
+        <h2>Report campus problems. Track their resolution.</h2>
+        <p>A simple digital platform for students to submit and monitor campus complaints.</p>
+        <a class="button" href="#complaint">Submit a Complaint</a>
+      </div>
+      <div class="hero-card">
+        <div><strong>01</strong><span>Submit</span></div>
+        <div><strong>02</strong><span>Track</span></div>
+        <div><strong>03</strong><span>Resolve</span></div>
+      </div>
+    </section>
+
+    <section id="complaint" class="section">
+      <div class="section-heading">
+        <h2>Submit a Complaint</h2>
+        <p>Enter the details below to report a campus issue.</p>
+      </div>
+
+      <form id="complaintForm" class="form-card">
+        <label for="studentName">Student Name</label>
+        <input id="studentName" type="text" placeholder="Enter your name" required>
+
+        <label for="rollNumber">Roll Number</label>
+        <input id="rollNumber" type="text" placeholder="Enter your roll number" required>
+
+        <label for="category">Complaint Category</label>
+        <select id="category" required>
+          <option value="">Select category</option>
+          <option>Classroom</option>
+          <option>Laboratory</option>
+          <option>Wi-Fi / Internet</option>
+          <option>Electrical</option>
+          <option>Maintenance</option>
+          <option>Other</option>
+        </select>
+
+        <label for="description">Complaint Description</label>
+        <textarea id="description" rows="5" placeholder="Describe the problem..." required></textarea>
+
+        <button type="submit" class="button">Submit Complaint</button>
+        <p id="formMessage" class="message"></p>
+      </form>
+    </section>
+
+    <section id="track" class="section light">
+      <div class="section-heading">
+        <h2>Track Complaint</h2>
+        <p>Use a complaint ID to check its current status.</p>
+      </div>
+
+      <div class="track-card">
+        <input id="complaintId" type="number" min="1" placeholder="Enter complaint ID">
+        <button id="trackButton" class="button">Track</button>
+        <div id="trackResult" class="track-result">No complaint searched yet.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Smart Campus Complaint Management System | Technical Training Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

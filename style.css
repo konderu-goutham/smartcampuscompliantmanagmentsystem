@@ -1,0 +1,235 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #172033;
+  line-height: 1.6;
+}
+
+header {
+  background: #172554;
+  color: white;
+  padding: 18px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.brand h1 {
+  font-size: 24px;
+}
+
+.brand p {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+nav {
+  display: flex;
+  gap: 22px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.hero {
+  min-height: 520px;
+  padding: 80px 7%;
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr;
+  align-items: center;
+  gap: 50px;
+  background: linear-gradient(135deg, #eef2ff, #ffffff);
+}
+
+.badge {
+  display: inline-block;
+  padding: 7px 12px;
+  border-radius: 20px;
+  background: #dbeafe;
+  color: #1e3a8a;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.hero h2 {
+  font-size: 46px;
+  line-height: 1.12;
+  margin: 18px 0;
+  max-width: 700px;
+}
+
+.hero p {
+  max-width: 620px;
+  color: #5b6475;
+  margin-bottom: 28px;
+}
+
+.button {
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.button:hover {
+  background: #1d4ed8;
+}
+
+.hero-card {
+  background: white;
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 15px 45px rgba(15, 23, 42, 0.1);
+}
+
+.hero-card div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.hero-card div:last-child {
+  border-bottom: none;
+}
+
+.hero-card strong {
+  font-size: 28px;
+  color: #2563eb;
+}
+
+.section {
+  padding: 70px 7%;
+}
+
+.section.light {
+  background: white;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-heading h2 {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.section-heading p {
+  color: #64748b;
+}
+
+.form-card,
+.track-card {
+  max-width: 680px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.08);
+}
+
+.form-card label {
+  display: block;
+  margin: 14px 0 6px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.form-card input,
+.form-card select,
+.form-card textarea,
+.track-card input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  font-size: 14px;
+}
+
+.form-card textarea {
+  resize: vertical;
+}
+
+.form-card .button {
+  margin-top: 20px;
+}
+
+.message {
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+.track-card {
+  text-align: center;
+}
+
+.track-card input {
+  width: 65%;
+  margin-right: 8px;
+}
+
+.track-result {
+  margin-top: 20px;
+  padding: 18px;
+  background: #f8fafc;
+  border-radius: 8px;
+  color: #475569;
+}
+
+footer {
+  text-align: center;
+  background: #172554;
+  color: white;
+  padding: 22px;
+  font-size: 13px;
+}
+
+@media (max-width: 800px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: 55px;
+  }
+
+  .hero h2 {
+    font-size: 36px;
+  }
+
+  .track-card input {
+    width: 100%;
+    margin: 0 0 10px;
+  }
+}
