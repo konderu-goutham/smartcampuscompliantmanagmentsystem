@@ -1,5 +1,4 @@
-
-const API_URL = "https://YOUR-RENDER-SERVICE.onrender.com/api/complaints";
+const API_URL = "https://smart-campus-backend-abcd.onrender.com/api/complaints";
 
 const complaintForm = document.getElementById("complaintForm");
 const formMessage = document.getElementById("formMessage");
